@@ -1,0 +1,392 @@
+body{
+    direction: rtl;
+}
+/* navbar */
+.navbar-nav{
+    flex-direction: row;
+    padding-bottom: 20px;
+    
+}
+/* .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000
+} */
+
+.profile {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: url("/assets/shlomit-photo.PNG");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    
+    border-radius: 6px
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px
+}
+
+.profile:hover .overlay {
+    opacity: 1
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    left: 22px
+}
+
+.social-icons li {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 1s
+}
+
+.social-icons li:hover {
+    background: #fff;
+    color: #000
+}
+
+.overlay .about {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 40%;
+    color: #fff;
+    flex: column
+}
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),url('/assets/header-background.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hover {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60%;
+}
+
+.hover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+}
+
+.hover img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.hover-content {
+    position: relative;
+    z-index: 99;
+}
+.bi-instagram{
+    color: rgb(173, 157, 157);
+}
+.bi-youtube{
+color: red;
+}
+
+/* DEMO 1 ============================== */
+.hover-1 img {
+    width: 105%;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    transition: all 0.3s;
+}
+
+.hover-1-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    transition: all 0.4s;
+}
+
+.hover-1 .hover-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hover-1-description {
+    transform: translateY(0.5rem);
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.hover-1:hover .hover-1-content {
+    bottom: 2rem;
+}
+
+.hover-1:hover .hover-1-description {
+    opacity: 1;
+    transform: none;
+}
+
+.hover-1:hover img {
+    left: 0;
+}
+
+.hover-1:hover .hover-overlay {
+    opacity: 0;
+}
+.card {
+    margin: 1em auto;
+}
+
+/* card style */
+.certification{
+display: flex;
+    justify-content: center;
+    
+}
+.card-info{
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    background: #e4cfcf;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+        margin-left: 40px;
+    margin-bottom: 120px;
+}
+.info-card-title{
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    margin-top: 7px;
+}
+hr{
+    color: white;
+    margin-bottom: 5px;
+}
+#card-little-title{
+    display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+}
+.card-discription{
+display: flex;
+justify-content: center;
+padding: 4px;
+text-align: center;
+}
+.cards{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+           
+/* footer */
+.bg-grey {
+    background: #292929;
+}
+
+.logo-footer {
+    margin-bottom: 40px;
+   
+}
+
+footer {
+    color: grey;
+}
+
+footer p,
+a {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer h6 {
+    font-family: 'Playfair Display', ;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+footer h6:after {
+    position: absolute;
+    content: "";
+    background: grey;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -20px;
+}
+
+.btn-footer {
+    color: grey;
+
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 43px;
+    font-size: 13px;
+    padding: 7px 30px;
+    line-height: 47px;
+}
+
+.btn-footer:hover {
+
+    text-decoration: none;
+
+}
+
+.form-footer input[type="text"] {
+    border: none;
+    border-radius: 16px 0 0 16px;
+    outline: none;
+    padding-left: 10px;
+
+}
+
+::placeholder {
+    font-size: 10px;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+.form-footer input[type="button"] {
+    border: none;
+    background: #232323;
+    margin-left: -5px;
+    color: #fff;
+    outline: none;
+    border-radius: 0 16px 16px 0;
+    padding: 2px 12px;
+}
+
+.social .fa {
+    color: grey;
+    font-size: 22px;
+    padding: 10px 15px;
+    background: #3c3c3c;
+}
+
+footer ul li {
+    list-style: none;
+    display: block;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f5f5f5 !important;
+
+}
+
+.logo-part {
+    border-right: 1px solid grey;
+    height: 100%;
+}
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: #25D366;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+    transform: translateX(5em);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+.svg-wrapper{
+    color: white !important;
+}
+/* media queris */
+/* @media screen and (max-width: 924px) {
+    .cards{
+        display: inline-block !important;
+
+
+        
+    }
+} */
