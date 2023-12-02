@@ -382,11 +382,34 @@ button:active {
     color: white !important;
 }
 /* media queris */
-/* @media screen and (max-width: 924px) {
+@media screen and (max-width: 924px) {
+    .navbar-nav {
+        order: 0 ;
+        font-size: 20px;
+    }
+    .navbar-brand{
+        margin-right: 50px;
+    }
+    .menu{
+        order: 1;
+    }
+   
     .cards{
-        display: inline-block !important;
-
-
-        
+     margin-right: 80px;
+    }
+    .my-card {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+    
+    }
+    
+}
+/* @media screen and (max-width: 1400px) {
+    .cards {
+        margin-right: 250px;
+    }
+    .card-4{
+        margin-right: 339px !important;
     }
 } */
