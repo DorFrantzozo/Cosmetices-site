@@ -7,6 +7,9 @@ body{
     padding-bottom: 20px;
     
 }
+.navbar-brand{
+    margin-right: 550px;
+}
 /* .wrapper {
     display: flex;
     justify-content: center;
@@ -50,7 +53,7 @@ body{
     position: absolute;
     text-align: center;
     justify-content: center;
-    left: 22px
+    left: 30px
 }
 
 .social-icons li {
